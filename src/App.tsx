@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from 'react';
+import './App.css'
+
+interface quizQuestion{
+  difficulty:string,
+  question:string
+}
 
 function App() {
+
+  const[data,setData] = useState<quizQuestion[]>([]);
+
+  useEffect(()=>{
+    fetch('https://opentdb.com/api.php?amount=10&category=21&difficulty=medium&type=multiple')
+    .then((response)=>response.json())
+    .then((data)=>{
+      setData(data.results)
+  })
+  },[])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     
+      <p className='ps'>Quiz-App 🤞</p>
+      
+       { <div className='quiz-box moo'>
+         
+       </div> }
+
     </div>
   );
 }

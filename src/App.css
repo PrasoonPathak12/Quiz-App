@@ -1,38 +1,99 @@
+#root {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; 
+}
+
+#root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/Quiz-bg.jpg');
+  background-size: cover; 
+  background-position: center;
+  filter: blur(4px);
+  z-index: -1;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  color: white;
+  width: 50%;
   display: flex;
   flex-direction: column;
+  /* justify-content: center; */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* background-color: aqua; */
+  position: relative;
+  left: 25%;
+
+}
+@media screen and (max-width:320px){
+  .App{
+    width: 90%;
+    position: relative;
+    left: 5%;
+  }
+  
+}
+@media screen and (min-width:320px ) and ( max-width:1020px){
+  .App{
+    width: 80%;
+    position: relative;
+    left: 10%;
+  }
+  
 }
 
-.App-link {
-  color: #61dafb;
+.ps{
+font-family: Pixelify sans;
+font-size: 32px;
+}
+@media screen and (max-width: 720px) {
+  .ps {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .ps {
+    font-size: 20px;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.moo{
+font-size: 16px;
+font-family: Mooli;
+}
+@media screen and (max-width: 720px) {
+  .moo {
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 320px) {
+  .moo {
+    font-size: 12px;
   }
+}
+.quiz-box{
+  width: 80%;
+  /* background-color:rgb(200,200,200); */
+  height: 50vh;
+  position: relative;
+}
+
+.quiz-box::before{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background-image: url('./images/Quiz-bg.jpg');
+  background-size: cover; 
+  background-position: center;
+  filter: blur(2px);
+  z-index: -1;
 }
