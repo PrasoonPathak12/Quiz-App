@@ -51,4 +51,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 # Screenshots:
 ![Screenshot (46)](https://github.com/user-attachments/assets/8cbeef04-950c-48cf-9f48-ded4b681152e)
+![Screenshot (48)](https://github.com/user-attachments/assets/212afce4-7ce1-4931-afd7-4f3a83c6c077)
+![Screenshot (49)](https://github.com/user-attachments/assets/84bf2d63-cb32-4fd7-8c04-092120134e34)
 ![Screenshot (47)](https://github.com/user-attachments/assets/635a7c15-6a61-4e21-a120-7186f47a9a65)
